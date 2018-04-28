@@ -1,0 +1,26 @@
+{
+  "name": "liribot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "liri.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joglatt/liribot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joglatt/liribot/issues"
+  },
+  "homepage": "https://github.com/joglatt/liribot#readme",
+  "dependencies": {
+    "dotenv": "^5.0.1",
+    "https": "^1.0.0",
+    "node-spotify-api": "^1.0.7",
+    "request": "^2.85.0",
+    "twitter": "^1.7.1"
+  }
+}
