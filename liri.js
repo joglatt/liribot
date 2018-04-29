@@ -11,7 +11,7 @@ var secondary = process.argv.splice(3).join("+");
 // var tertiary = process.argv.splice(4).join("+");
 //call to twitter api
 function tweets() {
-  client.get("statuses/user_timeline", { count: "10" }, function(
+  client.get("statuses/user_timeline", { count: "20" }, function(
     error,
     tweets,
     response
@@ -27,7 +27,7 @@ function song() {
   var Spotify = require("node-spotify-api");
   var spotifyApi = new Spotify(keys.spotify);
   if (secondary.length === 0) {
-    secondary = "the sign";
+    secondary = "The sound of silence";
 
   }
   spotifyApi.search(
@@ -95,5 +95,5 @@ if (input === "my-tweets") {
 } else if (input === "spotify-this-song") {
   song();
 }
-song();
+
 
